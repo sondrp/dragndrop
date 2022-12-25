@@ -1,3 +1,50 @@
-.app {
+
+.navbar {
+  height: 80px;
   padding: 20px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.1fr 3fr 0.5fr 0.5fr;
+  column-gap: 5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin-bottom: 50px;
+}
+
+.logo {
+  height: 100px;
+}
+
+.name {
+  font-size: 60px;
+  color: rgb(0, 162, 232);
+}
+
+.blue {
+  color: rgb(0, 162, 232);
+}
+
+.test {
+  background-color: black;
+}
+
+.location-container {
+  text-align: center;
+  margin: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: teal;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.addLoc {
+  padding: 10px;
+  text-align: center;
+  background-color: beige;
+  width: 200px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
