@@ -1,4 +1,3 @@
-
 .navbar {
   height: 80px;
   padding: 20px;
@@ -23,28 +22,44 @@
   color: rgb(0, 162, 232);
 }
 
-.test {
-  background-color: black;
-}
-
-.location-container {
-  text-align: center;
-  margin: 20px;
-  font-weight: bold;
-  color: white;
+.grid-header {
+  padding-top: 20px;
+  padding-left: 20px;
+  display: grid;
+  grid-template: repeat(3, 5px) / repeat(19, 1fr);
   background-color: teal;
-  padding: 20px;
-  width: 100px;
-  height: 100px;
+  grid-gap: 3px;
+  font-size: 13px;
 }
 
-.addLoc {
-  padding: 10px;
-  text-align: center;
-  background-color: beige;
-  width: 200px;
-  height: 100px;
-  margin-left: auto;
-  margin-right: 20px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+table {
+  border: 1px solid #1C6EA4;
+  background-color: #EEEEEE;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table td, table th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table tbody td {
+  font-size: 13px;
+}
+table thead {
+  background: #1C6EA4;
+  border-bottom: 2px solid #444444;
+}
+table thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border-left: 2px solid #D0E4F5;
+}
+table thead th:first-child {
+  border-left: none;
+}
+
+.tabell {
+  padding: 20px;
 }
