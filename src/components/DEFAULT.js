@@ -1,6 +1,3 @@
-
-
-
 export default function DEFAULT() {
     return (
         <div className="tabell">

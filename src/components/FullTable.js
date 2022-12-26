@@ -16,7 +16,7 @@ export default function FullTable(props) {
         <div className="tabell">
             <table>
                 <TableHeader headers={props.info[0]} />
-                {props.info[1][0] && props.info[1].map(l => <TableLine info={l} />)}
+                {props.info[1][0] && props.info[1].map(l => <TableLine info={l} onGenerate={props.onGenerate} />)}
             </table>
         </div>
     )

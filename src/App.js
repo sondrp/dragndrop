@@ -37,6 +37,17 @@ function handleFileInput(file) {
     }
 }
   const [info, setInfo] = React.useState([[], []])
+  const [skilt, setSkilt] = React.useState("")
+
+  
+  
+  
+
+  function makeSkilt(info) {
+    let result = info[14] + "\n" + "WYYK:RIGGRETUR\tANT:\nSAP:" + info[13] + "\tITIMS.NR:          \nK.NR:" + info[16] + "\nANK.DATO:\tLOK\nSING:\tDATO:"
+    setSkilt(result)
+  }
+
 
 
 
@@ -46,7 +57,8 @@ function handleFileInput(file) {
     <div className='app'>
       <NavBar />
       <FileUploader handleChange={file => handleFileInput(file)} name="file" types={["html"]} />
-      <FullTable info={info} />
+      <FullTable info={info} onGenerate={(i) => makeSkilt(i)} />
+      <textarea className='textarea' value={skilt} ></textarea>
     </div>
   );
 }
