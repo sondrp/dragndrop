@@ -77,3 +77,13 @@ table thead th:first-child {
 .center {
   padding: 20px;
 }
+
+.text {
+  font-size: 48px;
+  text-align: center;
+}
+
+.skilt {
+  width: 290mm;
+  height: 200mm;
+}

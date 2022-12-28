@@ -9,16 +9,16 @@ export default function Skilt(props) {
     return (
         <div className="skilt">
 
-            <div className='desc'>{desc}</div>
-            <div className='txt'>WYYK:RIGGRETUR</div>
-            <div className='txt'>ANT:</div>
-            <div className='sap'>SAP:{sap}</div>
-            <div className='itims'>ITIMS.NR:</div>
-            <div className='contract'>K.NR:{contract}</div>
-            <div className='txt'>ANK.DATO:</div>
-            <div>LOK:</div>
-            <div>SIGN:</div>
-            <div>DATO:</div>
+            <div className='text'>----</div>
+            <div className='text'>{desc}</div>
+            <div className='text'>WYYK:RIGGRETUR</div>
+            <div className='text'>ANT:</div>
+            <div className='text'>SAP:{sap}</div>
+            <div className='text'>ITIMS.NR:</div>
+            <div className='text'>K.NR:{contract}</div>
+            <div className='text'>LOK:</div>
+            <div className='text'>SIGN:DATO:</div>
+            <div></div>
 
         </div>
     )
