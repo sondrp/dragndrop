@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import React from 'react';
 import FullTable from './components/FullTable';
 import { FileUploader } from "react-drag-drop-files";
+import Printable from './components/Printable';
 
 function App() {
 
@@ -59,6 +60,11 @@ function handleFileInput(file) {
       <FileUploader handleChange={file => handleFileInput(file)} name="file" types={["html"]} />
       <FullTable info={info} onGenerate={(i) => makeSkilt(i)} />
       <textarea className='textarea' value={skilt} ></textarea>
+
+
+      <div className='center'>
+        <Printable />
+      </div>
     </div>
   );
 }
